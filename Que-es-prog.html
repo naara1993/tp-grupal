@@ -17,7 +17,7 @@
   <body>
     
     <header class="container-fluid">
-      <div class="row">
+      <div class="">
         <div class="logo-title">
           <img
             src="./img/images (1).png"
@@ -52,12 +52,17 @@
                 <a class="nav-link" href="#ancla-contacto">Contacto</a>
               </li>
               
-              <li class="nav-item">
+              <li id="login" class="nav-item">
                 <a
                   class="nav-link nav-modal"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
-                  >Login</a
+                  >Ingresar</a
+                >
+              </li>
+              <li id="login" class="nav-item">
+                <a class="btn nav-link " onclick="salirLogin()" id="salir"
+                  >Salir</a
                 >
               </li>
             </ul>
@@ -250,13 +255,16 @@
             />
           </div>
           <div class="modal-footer">
-            <button type="button" id="button-footer" class="btn btn-dark">
+            <button type="button"     data-bs-dismiss="modal"
+            aria-label="Close" id="button-footer" class="btn btn-dark">
               Ingresar
             </button>
           </div>
         </div>
       </div>
     </div>
+    <script  src="./js/Que-es-prog.js">
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
